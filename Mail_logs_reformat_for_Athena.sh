@@ -29,7 +29,7 @@
 #  's3://my-prod-athena-bucket/mail_logs/production/'
 
 # Script use 
-# find /var/log/ -name "maillog" -exec /root/mail_logs_reformat.sh {} \;
+# find /var/log/ -name "maillog" -exec /root/Mail_logs_reformat_for_Athena.sh {} \;
 # aws s3 sync /var/log/  s3://my-prod-athena-bucket/mail_logs/production/`hostname`/ --exclude "*" --include "*.s3"
 
 
