@@ -1,6 +1,6 @@
-# Author = Dushan Wijesinghe
-# Original post = https://devopslinux.wordpress.com/2016/04/24/rpm-build/
-
+## Author = Dushan Wijesinghe
+Original post = https://devopslinux.wordpress.com/2016/04/24/rpm-build/
+```
 yum install rpm-build rpmdevtools tree
 
 cd ~/
@@ -95,3 +95,4 @@ rm -rf $RPM_BUILD_ROOT
 rpmbuild -v -bb ~/rpmbuild/SPECS/{filename}.spec (to build new rpm)
 rpm -qpl rpmbuild/RPMS/noarch/{filename}.rpm (to check content inside rpm)
 rpm -i rpmbuild/RPMS/noarch/{filename}.rpm ( to install)
+```
