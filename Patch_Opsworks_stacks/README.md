@@ -4,7 +4,7 @@ This solution is to replace your Opsworks instance with the latest custom AMI wh
 During the instance replacement, it will keep the elastic IP (EIP) and re-allocate the same EIP to the instance. if the EIP is not enabled in your layer settings, it will allocate new public IP for each instance. The instance replace process will follow a sequence order to avoid any downtime. However, if your layer having one instance, you will experience a downtime during the instance replace process.
 
 ## Example Stack with multiple layers and instances
-The image will be replaced here
+![instances_in_multiple_layers](https://github.com/dushan566/bash_automation/blob/main/Patch_Opsworks_stacks/instances_in_multiple_layers.PNG?raw=true)
 
 
 ## prerequisite
