@@ -22,8 +22,7 @@ apache_error_logs () {
   cd /var/log/httpd
   gunzip error.log-*.gz
   aws s3 sync /var/log/httpd/ s3://$S3_BUCKET/apache_error_logs/$ENVIRONMENT/`hostname`/ --exclude "*" --include "error.log*"
-  find /var/log/httpd/ -name "at2-error.log*" -type f -mtime +1 -delete
-  find /var/log/httpd/ -name "error_log*" -type f -mtime +1 -delete
+  find /var/log/httpd/ -name "error.log*" -type f -mtime +1 -delete
 }
 
 apache_access_logs () {
