@@ -19,7 +19,7 @@ latest_ami=$( aws ec2 describe-images --region $REGION --owners $OWNER  \
 Or else you can set "latest_ami" variable as an argument and pass during runtime.
 Eg/- latest_ami=$3
 `
-./Patching.sh <Stack Name> <region>
+./Patching.sh <Stack Name> <region> <imageid>
 `
 
 2. You should have an Opsworks stack
