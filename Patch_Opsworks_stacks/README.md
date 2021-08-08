@@ -7,7 +7,7 @@ During the instance replacement, it will keep the elastic IP (EIP) and re-alloca
 ![instances_in_multiple_layers](https://github.com/dushan566/bash_automation/blob/main/Patch_Opsworks_stacks/instances_in_multiple_layers.PNG?raw=true)
 
 
-## prerequisite
+## Prerequisite
 1. Latest AWS AMI
 
 You can query the latest image by name and pass to "latest_ami" variable
